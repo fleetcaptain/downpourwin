@@ -1,0 +1,9 @@
+version: 0.0
+os: windows
+files:
+  - source: \content.txt
+    destination: c:\content.txt
+hooks:
+  BeforeInstall:
+    - location: \install.bat
+      timeout: 900
